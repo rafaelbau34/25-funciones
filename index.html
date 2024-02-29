@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uso de funciones con html5</title>
+  </head>
+  <body>
+    <button onclick="saludar();">Función 1</button>
+    <button onclick="saludarDos();">Función 2</button>
+    <button onclick="click1();">Aprieta</button>
+    <button onclick="hey();">Guapo</button>
+
+    <button onclick="noche()">Modo Oscuro</button>
+    <style>
+      body.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
+    </style>
+
+    <button onclick="visibilidad()">Bye</button>
+    <p id="myElement">Esto desaparece cuando presionas "Bye".</p>
+
+    <button onclick="incrementar()">Cuento</button>
+    <p id="contar">0</p>
+
+    <button onclick="Color()">Prefiero azul</button>
+    <div
+      id="kolor"
+      style="width: 200px; height: 200px; background-color: red"
+    ></div>
+
+    <button onclick="pagina()">GIT</button>
+
+    <button onclick="clase()">Marcatexto</button>
+    <p id="texto">Resalta lo mas importante.</p>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+
+    <button onclick="hora()">Fecha y hora</button>
+    <p id="hora"></p>
+
+    <input type="text" id="nombre" placeholder="Escriba su nombre" />
+    <button onclick="NOMBRE()">Mostrar nombre</button>
+
+    <input type="numero" id="num1" placeholder="Escriba un número" />
+    <input type="numero" id="num2" placeholder="Escriba otro número" />
+    <button onclick="calcularSum()">Calcular suma</button>
+    <p id="resultado"></p>
+
+    <button onclick="add()">Añadir a lista</button>
+    <ul id="lista"></ul>
+
+    <button onclick="mostrarOcultar()">Revelar</button>
+    <p id="elemento1" style="display: none">Hola</p>
+    <p id="elemento2" style="display: none">TE AMO</p>
+
+    <button onclick="temporizador()">Iniciar temporizador</button>
+    <p id="tiempo"></p>
+
+    <input type="checkbox" id="Checkbox" /> Acepto términos y condiciones<br />
+    <button id="aceptar" disabled>Aceptar</button>
+
+    <input
+      type="password"
+      id="passwordInput"
+      placeholder="Enter your password"
+    />
+    <button onclick="Password()">Mostrar/Ocultar</button>
+
+    <button onclick="scrolltotop()">Ir hasta arriba</button>
+
+    <p oncontextmenu="return false;">
+      Click derecho desactivado sobre este texto.
+    </p>
+
+    <button onclick="fuente()">Aumentar tamaño de fuente</button>
+    <p id="textoo" style="font-size: 16px">
+      ALL THEY SAY IS LIES. OPEN YOUR EYES!!!
+    </p>
+
+    <button onclick="desactivar(this)">PRESIONAME!</button>
+
+    <button onclick="incrementCounter()">Aumentar</button>
+    <button onclick="decrementCounter()">Restar</button>
+    <p id="counter">0</p>
+
+    <button onmouseover="showTooltip()" onmouseout="hideTooltip()">
+      USSHH
+    </button>
+    <div id="tooltip">WOW VERDAD</div>
+
+    <script src="./expresiones.js"></script>
+  </body>
+</html>
